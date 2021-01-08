@@ -1,31 +1,44 @@
 {
-  "name": "express-request-proxy",
-  "version": "2.2.2",
-  "description": "Intelligent http proxy Express middleware",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --reporter spec --bail --exit --check-leaks test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --exit --check-leaks test/",
-    "lint": "eslint --cache ./lib index.js"
+  "_from": "express-request-proxy@^2.0.0",
+  "_id": "express-request-proxy@2.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-0Dzn6LQG0ohd2S+zJVMhsntwcDakEzm/uKJSZxH7B66ZBvTsB5LU/HvfO1dHG+RRiKuCg0aWfUa66PljnDjEdw==",
+  "_location": "/express-request-proxy",
+  "_phantomChildren": {
+    "core-util-is": "1.0.2",
+    "inherits": "2.0.4",
+    "lodash": "4.17.20",
+    "process-nextick-args": "2.0.1",
+    "pseudomap": "1.0.2",
+    "upper-case": "1.1.3",
+    "util-deprecate": "1.0.2",
+    "xtend": "4.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dvonlehman/express-request-proxy"
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "express-request-proxy@^2.0.0",
+    "name": "express-request-proxy",
+    "escapedName": "express-request-proxy",
+    "rawSpec": "^2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.0"
   },
-  "keywords": [
-    "express",
-    "middleware",
-    "request",
-    "api",
-    "proxy"
+  "_requiredBy": [
+    "/prisma-cli-core"
   ],
-  "author": "David Von Lehman (https://github.com/dvonlehman)",
-  "license": "Apache-2.0",
+  "_resolved": "https://registry.npmjs.org/express-request-proxy/-/express-request-proxy-2.2.2.tgz",
+  "_shasum": "ebe8966e7ab47c97b59721f2714217a6389a2a76",
+  "_spec": "express-request-proxy@^2.0.0",
+  "_where": "/Users/lahnjara/Documents/Kandra/back-office/servers/graphql/node_modules/prisma-cli-core",
+  "author": {
+    "name": "David Von Lehman",
+    "url": "https://github.com/dvonlehman"
+  },
   "bugs": {
     "url": "https://github.com/dvonlehman/express-request-proxy/issues"
   },
-  "homepage": "https://github.com/dvonlehman/express-request-proxy",
+  "bundleDependencies": false,
   "dependencies": {
     "async": "^2.6.1",
     "body-parser": "^1.18.3",
@@ -34,12 +47,14 @@
     "lodash": "^4.17.10",
     "lru-cache": "^4.1.3",
     "path-to-regexp": "^1.1.1",
-    "request": "^2.87.0",
+    "request": "https://github.com/DevFullStackJS/request.git",
     "simple-errors": "^1.0.1",
     "through2": "^2.0.3",
     "type-is": "^1.6.16",
     "url-join": "4.0.0"
   },
+  "deprecated": false,
+  "description": "Intelligent http proxy Express middleware",
   "devDependencies": {
     "compression": "^1.7.2",
     "coveralls": "^3.0.2",
@@ -52,5 +67,27 @@
     "shortid": "^2.2.8",
     "sinon": "^5.0.10",
     "supertest": "^3.1.0"
-  }
+  },
+  "homepage": "https://github.com/dvonlehman/express-request-proxy",
+  "keywords": [
+    "express",
+    "middleware",
+    "request",
+    "api",
+    "proxy"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "express-request-proxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvonlehman/express-request-proxy.git"
+  },
+  "scripts": {
+    "lint": "eslint --cache ./lib index.js",
+    "test": "mocha --reporter spec --bail --exit --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --exit --check-leaks test/"
+  },
+  "version": "2.2.2"
 }
